@@ -1,0 +1,35 @@
+.tabs {
+    display: flex;
+    gap: 14px;
+
+    background-color: rgba(white, 0.25);
+    backdrop-filter: blur(3px);
+
+    border-radius: 12px;
+    
+    padding: 10px;
+    margin: 12px;
+    margin-top: 50px;
+}
+
+.tab {
+    position: relative;
+
+    text-decoration: none;
+    
+    z-index: 1;
+}
+
+.tab-tile {
+    display: flex;
+    
+    padding: 18px;
+
+    cursor: pointer;
+    
+    i {
+        color: #222;
+    }
+
+    transition: all 0.2s ease-out;
+}

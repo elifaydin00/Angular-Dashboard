@@ -1,0 +1,21 @@
+.add-bookmark-wrapper {
+    padding: 50px; /* Increase the padding to create more space */
+    border-radius: 5px;
+    height: 100%;
+    overflow: auto;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.form-field {
+    margin-bottom: 10px; /* Add some space between each form field */
+  }
+  
+.btns-container {
+    display: flex; /* Create a flex container for the buttons */
+    justify-content: space-between; /* Distribute the buttons horizontally */
+}

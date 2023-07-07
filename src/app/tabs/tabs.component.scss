@@ -41,6 +41,8 @@
     transition-timing-function: cubic-bezier(0, 0, 0, 2);
 }
 
+// STYLES FOR THE TAB TILE BACKGROUND 'SHAPE'
+
 .tab-tile::before {
     content: '';
     
@@ -61,15 +63,15 @@
 }
 
 .bookmarks-tab .tab-tile::before {
-    background: linear-gradient(45deg, #4bd7f0, #e4ee8c);
+    background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
 }
 
 .todos-tab .tab-tile::before {
-    background: linear-gradient(45deg, #4bd7f09a, #d9e755);
+    background: linear-gradient(45deg, #a2ffff, #ffbdde);
 }
 
 .notes-tab .tab-tile::before {
-    background: linear-gradient(45deg, #4bd7f03d, #d9ec2d);
+    background: linear-gradient(45deg, #d2cdff, #5fffbc);
 }
 
 .tab-tile:hover::before {
@@ -86,6 +88,13 @@
 
     transition-delay: 0.2s;
 }
+
+// END OF TAB TILE BACKGROUND 'SHAPE' STYLES
+
+
+
+
+// STYLES FOR THE UNDERLINE EFFECT
 
 .tab::after {
     content: '';

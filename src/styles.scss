@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons');
 
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
 html {
     font-family: 'Inter', sans-serif;
 }
@@ -19,5 +22,8 @@ h1 {
 
 h2 {
     font-size: 40px;
-    margin-bottom: 25px;
+    //margin-bottom: 25px;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

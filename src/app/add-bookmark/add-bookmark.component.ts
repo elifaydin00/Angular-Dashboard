@@ -4,10 +4,11 @@ import { Router } from '@angular/router';
 import { Bookmark } from '../shared/bookmark.model';
 import { BookmarkService } from '../shared/bookmark.service';
 
+
 @Component({
   selector: 'app-add-bookmark',
   templateUrl: './add-bookmark.component.html',
-  styleUrls: ['./add-bookmark.component.scss']
+  styleUrls: ['./add-bookmark.component.scss'],
 })
 export class AddBookmarkComponent implements OnInit{
 

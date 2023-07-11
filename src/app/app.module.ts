@@ -17,6 +17,7 @@ import { NoteCardComponent } from './note-card/note-card.component';
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import { AddBookmarkComponent } from './add-bookmark/add-bookmark.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ManageBookmarksComponent } from './manage-bookmarks/manage-bookmarks.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BookmarkTileComponent,
     NoteCardComponent,
     TodoItemComponent,
-    AddBookmarkComponent
+    AddBookmarkComponent,
+    ManageBookmarksComponent
   ],
   imports: [
     BrowserModule,

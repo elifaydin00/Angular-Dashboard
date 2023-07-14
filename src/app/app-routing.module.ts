@@ -5,10 +5,14 @@ import { AddBookmarkComponent } from './add-bookmark/add-bookmark.component';
 import { TodosComponent } from './todos/todos.component';
 import { NotesComponent } from './notes/notes.component';
 import { ManageBookmarksComponent } from './manage-bookmarks/manage-bookmarks.component';
+import { EditBookmarkComponent } from './edit-bookmark/edit-bookmark.component';
 
 const routes: Routes = [
   { path: 'bookmarks', component: BookmarksComponent },
   { path: 'bookmarks/add', component: AddBookmarkComponent },
+  { path: 'bookmarks/manage', component: ManageBookmarksComponent , children: [
+    { path: ':id', component: EditBookmarkComponent }
+  ]},
   { path: 'todos', component: TodosComponent },
   { path: 'notes', component: NotesComponent }
   

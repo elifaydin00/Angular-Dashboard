@@ -9,6 +9,7 @@ export class BookmarkService implements OnDestroy {
 
   bookmarks: Bookmark[] = []
 
+  //for local storage
   storageListenSub: Subscription
   
   constructor() {
@@ -31,7 +32,7 @@ export class BookmarkService implements OnDestroy {
     return this.bookmarks
   }
 
-  getBookmark(id: string) {
+  getBookmark(id: string): Bookmark | undefined {
     return this.bookmarks.find(b => b.id === id)
   }
 

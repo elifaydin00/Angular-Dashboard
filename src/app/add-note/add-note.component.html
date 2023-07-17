@@ -1,0 +1,27 @@
+<div class="add-note-wrapper container has-blurred-white-bg">
+    <h2 class="is-bold">New Note</h2>
+    
+    <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+        <mat-form-field>
+            <input matInput ngModel #titleField="ngModel" name="title" type="text" placeholder="Enter note title..." required minlength="3">
+            <ng-container *ngIf="showValidationErrors && titleField.invalid">
+                <p *ngIf="titleField.errors?.['required']">Please enter a note title</p>
+                <p *ngIf="titleField.errors?.['minlength']">Title must be at least 3 characters</p>
+            </ng-container>
+        </mat-form-field>
+
+        <mat-form-field>
+            <textarea matInput ngModel name="content" placeholder="Enter note content..."
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="1"
+            cdkAutosizeMaxRows="5"></textarea>
+
+        </mat-form-field>
+
+        <div class="btns-container">
+            <a routerLink="../" mat-button="btn" color="warn"> Cancel</a>
+            <button mat-raised-button color="primary">Create Note</button>
+        </div>
+    </form>
+</div>

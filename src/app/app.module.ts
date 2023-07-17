@@ -19,6 +19,7 @@ import { AddBookmarkComponent } from './add-bookmark/add-bookmark.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ManageBookmarksComponent } from './manage-bookmarks/manage-bookmarks.component';
 import { EditBookmarkComponent } from './edit-bookmark/edit-bookmark.component';
+import { AddNoteComponent } from './add-note/add-note.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EditBookmarkComponent } from './edit-bookmark/edit-bookmark.component';
     TodoItemComponent,
     AddBookmarkComponent,
     ManageBookmarksComponent,
-    EditBookmarkComponent
+    EditBookmarkComponent,
+    AddNoteComponent
   ],
   imports: [
     BrowserModule,

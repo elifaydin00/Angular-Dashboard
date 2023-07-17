@@ -1,3 +1,16 @@
 .edit-bookmark-wrapper {
+    display: flex;
+
     padding: 35px;
+
+    flex-direction: column;
+
+    overflow: scroll;
+
+    background-color: rgba(black, 0.4);
+}
+
+.btns-container {
+    display: flex; /* Create a flex container for the buttons */
+    gap: 20px;
 }

@@ -13,9 +13,11 @@ app-note-card {
     margin-bottom: 15px;
 }
 
-.btns-centered {
+.btns-container {
     padding-top: 10px;
+    gap: 10px;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
   }
+  

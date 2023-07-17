@@ -5,6 +5,7 @@ import { AddBookmarkComponent } from './add-bookmark/add-bookmark.component';
 import { TodosComponent } from './todos/todos.component';
 import { NotesComponent } from './notes/notes.component';
 import { AddNoteComponent } from './add-note/add-note.component';
+import { EditNoteComponent } from './edit-note/edit-note.component';
 import { ManageBookmarksComponent } from './manage-bookmarks/manage-bookmarks.component';
 import { EditBookmarkComponent } from './edit-bookmark/edit-bookmark.component';
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   ]},
   { path: 'todos', component: TodosComponent },
   { path: 'notes', component: NotesComponent },
-  { path: 'notes/add', component: AddNoteComponent }
+  { path: 'notes/add', component: AddNoteComponent },
+  { path: 'notes/:id', component: EditNoteComponent }
   
 ];
 

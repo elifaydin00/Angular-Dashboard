@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ManageBookmarksComponent } from './manage-bookmarks/manage-bookmarks.component';
 import { EditBookmarkComponent } from './edit-bookmark/edit-bookmark.component';
 import { AddNoteComponent } from './add-note/add-note.component';
+import { EditNoteComponent } from './edit-note/edit-note.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AddNoteComponent } from './add-note/add-note.component';
     AddBookmarkComponent,
     ManageBookmarksComponent,
     EditBookmarkComponent,
-    AddNoteComponent
+    AddNoteComponent,
+    EditNoteComponent
   ],
   imports: [
     BrowserModule,

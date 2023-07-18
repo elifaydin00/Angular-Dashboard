@@ -12,3 +12,11 @@ app-todo-item {
     display: block;
     margin-bottom: 15px;
 }
+
+.btns-container {
+    padding-top: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
